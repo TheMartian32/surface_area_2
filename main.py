@@ -199,16 +199,17 @@ class calc():
         # * Calculations below
 
         # Base area of cylinder
-        base_area = 2*pi*radius**2
+        base_area = 2*radius**2
 
         # Lateral area of cylinder
-        lateral_area = 2*pi*radius*height
+        lateral_area = 2*radius*height
 
         # * Surface area
-        surf_area = base_area+lateral_area
+        surf_area = lateral_area+base_area
+        surf_area = surf_area*3.14
 
         if lateral_included in ['n', 'no', 'nyet']:
-            surf_area = lateral_area
+            surf_area = lateral_area*pi
             return print(f'The surface area is {surf_area}.')
 
         answer = round(surf_area, 2)
