@@ -198,7 +198,7 @@ class calc():
 
         # * Calculations below
 
-        # * Formula: 2pi*r^2 + 2pi*rh
+        #* Formula: 2pi*r^2 + 2pi*rh
 
         # Base area of cylinder
         base_area = 2*radius**2
